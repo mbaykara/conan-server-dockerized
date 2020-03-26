@@ -8,7 +8,7 @@ docker build -t myserver .
 
 docker run -p 9300:9300 -v conan-server:/var/lib/conan myserver
 ```
-or run via docker-compose
+or run via `docker-compose`
 ```bash
 docker-compose up --build
 ```
