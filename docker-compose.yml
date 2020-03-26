@@ -1,0 +1,10 @@
+version: "3"
+services:
+  conan:
+    build: .
+    container_name: conan
+    volumes:
+      - ./conan:/var/lib/conan
+    ports:
+      - "9300:9300"
+
