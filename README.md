@@ -1,17 +1,13 @@
 # 708
 
 
-To run docker container
+Build the docker image
 ```bash
 docker build -t myserver .
+
 #Then hit following command
 
-docker run -p 9300:9300 -v conan-server:/var/lib/conan myserver
-```
-or run via `docker-compose`
-```bash
-docker-compose up --build
-```
+`docker run -p 9300:9300 --name conan-server --mount type=bind,source="$(pwd)"/,target=/app conan_server_image`
 
 
 
