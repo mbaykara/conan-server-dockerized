@@ -7,7 +7,8 @@ docker build -t myserver .
 
 #Then hit following command
 
-`docker run -p 9300:9300 --name conan-server --mount type=bind,source="$(pwd)"/,target=/app conan_server_image`
+`docker run -t -p 9300:9300 --name conan-server --mount type=bind,source="$(pwd)"/,target=/app conan_server_image`
+
 
 
 
