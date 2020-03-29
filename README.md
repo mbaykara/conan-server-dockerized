@@ -12,7 +12,7 @@ docker build -t myserver .
 
 Add all local conan packages to remote server
 ```bash
-conan upload "" --all -r=my_server 
+conan upload "" --all -r=my_server -c //- for without confirmation
 ```
 
 
