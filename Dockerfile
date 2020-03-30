@@ -7,7 +7,7 @@ RUN adduser -S conan -h /var/lib/conan -s /bin/sh
 
 # Run uwsgi listening on port 9300
 
-
+EXPOSE 9300
 ADD ./entrypoint.sh /entrypoint.sh
 
 CMD ["/bin/sh", "/entrypoint.sh"]
