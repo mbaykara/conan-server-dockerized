@@ -1,19 +1,10 @@
 # 708
 
-
-Build the docker image
+### Simply run `run_container.sh` script by hitting
 ```bash
-docker build -t myserver .
-
-#Then hit following command
-
-`docker run -t -p 9300:9300 --name conan-server --mount type=bind,source="$(pwd)"/,target=/app conan_server_image`
-
-
-Add all local conan packages to remote server
-```bash
-conan upload "" --all -r=my_server -c //- for without confirmation
+$ sh run_container.sh
 ```
+The container is listening on `port 9300`
 
 
 based on https://github.com/cguentherTUChemnitz/docker-conan-server
