@@ -6,7 +6,7 @@ RUN apk update && apk add vim \
 RUN adduser -S conan -h /var/lib/conan -s /bin/sh
 
 # Run uwsgi listening on port 9300
-COPY server.conf app/server.conf
+COPY server.conf /var/lib/conan/.conan_server/server.conf
 EXPOSE 9300
 ADD ./entrypoint.sh /entrypoint.sh
 
