@@ -1,7 +1,6 @@
 #/bin/bash
 
 conan_net=$(docker network create --subnet=172.20.0.0/16 conan_net)
-#conan_ip=$(docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $conan_net)
 
 
 # build the docker image 
