@@ -1,5 +1,6 @@
 #/bin/bash
 
+# Creating custom network and assing static ip
 conan_net=$(docker network create --subnet=172.20.0.0/16 conan_net)
 
 
